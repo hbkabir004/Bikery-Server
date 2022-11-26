@@ -73,6 +73,11 @@ async function run() {
             const categories = await categoryCollection.find(query).toArray();
             res.send(categories);
         });        
+        app.get('/allproducts', async (req, res) => {
+            const query = {};
+            const products = await productCollection.find(query).toArray();
+            res.send(products);
+        });        
         
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
             const decodedEmail = req.decoded.email;
