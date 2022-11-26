@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Indicators",
+    "img": "https://i.ibb.co/R2rjV97/Indicators.png",
+    "description": "A full range of aftermarket replacement motorcycle indicators from Bike It and Oxford Products. Our range has such a large variety of different styles; chrome, custom, LED, fairing, micro and the latest streaming indicators there's no doubt you will find the right ones for you.",
+    "minimum": 150,
+    "available": 2000,
+    "price": 250
+  },
+  {
+    "name": "Kick Lever",
+    "img": "https://i.ibb.co/qpGqLvs/Kick-Lever.png",
+    "description": "Replace your stock OEM kick starter with this high quality aftermarket replacement. Forged from 7075-T6 aluminium, the RHK Kick Starter is not only an upgrade on the strength and quality of your stock part, but is colour matched to suit your bike and make you stand out on the track.",
+    "minimum": 150,
+    "available": 5000,
+    "price": 200
+  },
+  {
+    "name": "Mudguard Front",
+    "img": "https://i.ibb.co/vZ2k6HQ/Mudguard-Front.png",
+    "description": "Your front wheel kicks up a lot of spray which can soak your feet, leaving them cold and sapping you of energy and motivation. This is why some front full-length mudguards have a mud flap on the end, providing you with extra protection and helping to keep your feet dry.",
+    "minimum": 150,
+    "available": 1600,
+    "price": 550
+  },
+  {
+    "name": "Mudguard Rear",
+    "img": "https://i.ibb.co/GW46VjL/Mudguard-Rear.png",
+    "description": "Motorcycle rear mudguard can quickly prevent splash ups and protect the parts. In AliExpress, you can also find other good deals on mudguard! With low prices, we don't fault you for shopping motorcycle rear mudguard online all the time. With the numerous promotions, we're here to help you get the most savings!",
+    "minimum": 150,
+    "available": 1700,
+    "price": 700
+  },
+  {
+    "name": "Number Plate",
+    "img": "https://i.ibb.co/2hsGkn9/No-Plate.png",
+    "description": "Motorcycle plates are similar to rectangular automobile plates, but smaller. Commercial registration plates are similar in appearance to private plates, but the background is blue, and the writing and circle are white. Security forces plates are black with white letters.",
+    "minimum": 150,
+    "available": 4000,
+    "price": 600
+  },
+  {
+    "name": "Oil Filter",
+    "img": "https://i.ibb.co/jHFgKWS/Oil-Filter.png",
+    "description": "The oil filter receives the engine oil through the oil holes on the top cover. The oil is then guided to the paper pleats which absorb the contaminants in the oil and filter them clean.",
+    "minimum": 150,
+    "available": 2100,
+    "price": 150
+  },
+  {
+    "name": "Self Motor",
+    "img": "https://i.ibb.co/vLPdc57/Self-Motor.png",
+    "description": "A starter (also self-starter, cranking motor, or starter motor) is a device used to rotate (crank) an internal-combustion engine so as to initiate the engine's operation under its own power. Starters can be electric, pneumatic, or hydraulic.",
+    "minimum": 150,
+    "available": 1800,
+    "price": 2000
+  },
+  {
+    "name": "Spark Plug",
+    "img": "https://i.ibb.co/8Pv6XVn/Spark-Plug.png",
+    "description": "The spark plug is a fundamental component of your bike's ignition system. Voltage is sent into the plug from its base, jumping from a centre electrode to a grounded electrode, creating a spark.",
+    "minimum": 150,
+    "available": 1300,
+    "price": 200
+  },
+  {
+    "name": "Wheel ( Rim ) Front",
+    "img": "https://i.ibb.co/cwRLVYJ/Wheel-Rim-Front.png",
+    "description": "Motorcycle wheels are made to cope with radial and axial forces. They also provide a way of mounting other critical components such as the brakes, final drive and suspension. Wheels, and anything directly connected to them, are considered to be unsprung mass.",
+    "minimum": 150,
+    "available": 900,
+    "price": 2500
+  },
+  {
+    "name": "Wheel ( Rim ) Rear",
+    "img": "https://i.ibb.co/VN8X56R/Wheel-Rim-Rear.png",
+    "description": "Motorcycle wheels come in two different types of rims: solid wheels or spoke wheels. The rim and spokes are cast as a single unit in the former case, whereas the rims are laced with spokes in the latter case.",
+    "minimum": 150,
+    "available": 1300,
+    "price": 3000
+  },
+  {
+    "name": "Air Filter",
+    "img": "https://i.ibb.co/3pVzx8F/air-filter.png",
+    "description": "Bike air filters are just like your nose. They filter out all the unwanted particles in the air before it enters the engine, allowing only clean and pure air inside for better combustion, which results in better efficiency and smooth power delivery.",
+    "minimum": 150,
+    "available": 1100,
+    "price": 250
+  },
+  {
+    "name": "Break Oil",
+    "img": "https://i.ibb.co/K5FT086/break-oil.png",
+    "description": "Most brake fluid is slightly yellow or amber color. If it looks clear when your bike is new, it won't be that clear in a week or so of riding. That doesn't mean it is bad.",
+    "minimum": 150,
+    "available": 2100,
+    "price": 950
+  },
+  {
+    "name": "Clutch Oil",
+    "img": "https://i.ibb.co/tCTtxxf/clutch-oil.png",
+    "description": "The key is to use a lubricant specifically formulated for wet clutches. AMSOIL Synthetic V-Twin Motorcycle Oil, Synthetic Metric Motorcycle Oil, Synthetic Dirt Bike Oil and Synthetic Dirt Bike Transmission Fluid contain no friction modifiers or extreme-pressure additives.",
+    "minimum": 150,
+    "available": 2000,
+    "price": 900
+  },
+  {
+    "name": "Clutch wire",
+    "img": "https://i.ibb.co/cr7GTvf/clutch-wire.png",
+    "description": "Simply put: a clutch cable allows the vehicle to change gear. The clutch cable forms part of the vehicle's transmission. That is: all the components involved in the routing and transformation of the rotational movement from the engine to the driving wheels.",
+    "minimum": 150,
+    "available": 2000,
+    "price": 200
+  },
+  {
+    "name": "Coolant",
+    "img": "https://i.ibb.co/CvVqgJv/coolant.png",
+    "description": "Motorcycle coolant is a fluid used to moderate heat within your motorbike's engine. A mixture of antifreeze and water, it has higher boiling and freezing points than water, can cool more effectively than air, and is much less viscous than oil, making it ideal for vehicular cooling systems.",
+    "minimum": 150,
+    "available": 5000,
+    "price": 1350
+  },
+  {
+    "name": "Cylinder Kit",
+    "img": "https://i.ibb.co/34LDbn3/cylinder-kit.png",
+    "description": "Motorcycle engines work the same way that car engines do. They consist of pistons, a cylinder block and a head, which contains the valve train. The pistons move up and down in the cylinder block, driven by explosions of a fuel-air mixture that has been ignited by a spark.",
+    "minimum": 150,
+    "available": 2500,
+    "price": 2100
+  },
+  {
+    "name": "Fork Right Front",
+    "img": "https://i.ibb.co/g9txZBx/Fork-Right-Front.png",
+    "description": "When the fork compresses (when braking or hitting a bump), oil forces apart the spring-loaded valve on one side. This side gives compression damping. When the fork expands (on rebound), the fork expands, and oil forces apart the spring-loaded valve on the other side.",
+    "minimum": 150,
+    "available": 1300,
+    "price": 1900
+  },
+  {
+    "name": "Handle Bar",
+    "img": "https://i.ibb.co/3TSm75q/Handle-Bar.png",
+    "description": "A motorcycle handlebar is a tubular component of a motorcycle's steering mechanism. Handlebars provide a mounting place for controls such as brake, throttle, clutch, horn, light switches and rear view mirrors; and they help to support part of the rider's weight.",
+    "minimum": 150,
+    "available": 3000,
+    "price": 150
+  },
+  {
+    "name": "Headlight",
+    "img": "https://i.ibb.co/mXQbygm/Headlight.png",
+    "description": "Motorcycle headlights are one of the most important safety features of a motorcycle. They work in both giving you visibility at low light conditions or at night, and they also let people know that you're there.",
+    "minimum": 150,
+    "available": 2000,
+    "price": 3500
+  },
+  {
+    "name": "Horn",
+    "img": "https://i.ibb.co/nLjCswW/Horn.png",
+    "description": "Pressing the horn button on the handlebar activates the electromagnet, which pulls on the diaphragm until a set of contact points touch, breaking the electromagnet's pull on the steel and returning the diaphragm to its original process to start the cycle again.",
+    "minimum": 150,
+    "available": 1000,
+    "price": 230
+  }
+]
