@@ -68,16 +68,29 @@ async function run() {
             res.send({isAdmin : user?.role === 'admin'});
         });
 
+        // Read All Cayegory Data
         app.get('/categories', async (req, res) => {
             const query = {};
             const categories = await categoryCollection.find(query).toArray();
             res.send(categories);
-        });        
+        });
+          
+        // Read All Products Data
         app.get('/allproducts', async (req, res) => {
             const query = {};
             const products = await productCollection.find(query).toArray();
             res.send(products);
-        });        
+        });
+        
+        // Read Specific Cayegory Data
+        app.get('/categories/:id', async(req, res) => {
+            const id = req.params.id;
+            const query = { category_id: id };
+            const cursor = await productCollection.find(query);
+            const selectedProducts = await cursor.toArray();
+            res.send(selectedProducts);
+          
+          })
         
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
             const decodedEmail = req.decoded.email;
