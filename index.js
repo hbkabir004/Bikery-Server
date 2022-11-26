@@ -35,6 +35,8 @@ const verifyJWT = (req, res, next)=>{
 async function run() {
     try {
         const usersCollection = client.db('bikery').collection('users');
+        const categoryCollection = client.db('bikery').collection('categories');
+        const productCollection = client.db('bikery').collection('products');
 
         app.get('/jwt', async (req, res) => {
             const email = req.query.email;
@@ -65,6 +67,12 @@ async function run() {
             const user = await usersCollection.findOne(query);
             res.send({isAdmin : user?.role === 'admin'});
         });
+
+        app.get('/categories', async (req, res) => {
+            const query = {};
+            const categories = await categoryCollection.find(query).toArray();
+            res.send(categories);
+        });        
         
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
             const decodedEmail = req.decoded.email;

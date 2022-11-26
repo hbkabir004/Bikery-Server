@@ -1,0 +1,26 @@
+[
+  {
+    "category_id": "1",
+    "name": "Extension",
+    "logo": "https://canary.contestimg.wish.com/api/webimage/5daac6aee435540e3c1a133c-large.jpg?cache_buster=8d85cac2f7a1126f5be9f3bf96414787",
+    "total": "6"
+  },
+  {
+    "category_id": "2",
+    "name": "Engine",
+    "logo": "https://images-na.ssl-images-amazon.com/images/I/71+jZfkcKSL._AC_UL600_SR600,600_.jpg",
+    "total": "1"
+  },
+  {
+    "category_id": "3",
+    "name": "ToolKits",
+    "logo": "https://www.venhill.co.uk/media/magefan_blog/motorbike-breakdown3.jpg",
+    "total": "9"
+  },
+  {
+    "category_id": "4",
+    "name": "Major Parts",
+    "logo": "https://www.pngfind.com/pngs/m/52-524325_motorcycle-parts-png-transparent-png.png",
+    "total": "4"
+  }
+]
