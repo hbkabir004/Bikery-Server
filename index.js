@@ -50,23 +50,24 @@ async function run() {
             res.status(403).send({ accessToken: '' })
         });
 
-        app.post('/users', async (req, res) => {
-            const user = req.body;
-            const result = await usersCollection.insertOne(user);
+        // Post Bookings
+        app.post('/bookings', async (req, res) => {
+            const bookings = req.body;
+            // console.log(bookings);
+            const query = {
+                email: bookings.email,
+                treatment: bookings.treatment
+            }
+
+            const alreadyBooked = await bookingsCollection.find(query).toArray();
+
+            if (alreadyBooked.length){
+                const message = `You have already booked ${bookings.name}`
+                return res.send({acknowledged: false, message})
+            }
+
+            const result = await bookingsCollection.insertOne(bookings);
             res.send(result);
-        });
-
-        app.get('/users', async (req, res) => {
-            const query = { };
-            const users = await usersCollection.find(query).toArray();
-            res.send(users);
-        });
-
-        app.get('/users/admin/:email', async (req, res) => {
-            const email = req.params.email;
-            const query = {email};
-            const user = await usersCollection.findOne(query);
-            res.send({isAdmin : user?.role === 'admin'});
         });
 
         // Read All Cayegory Data
@@ -101,24 +102,24 @@ async function run() {
             res.send(selectedProducts);
           
           })
-        // Post Bookings
-        app.post('/bookings', async (req, res) => {
-            const bookings = req.body;
-            // console.log(bookings);
-            const query = {
-                email: bookings.email,
-                treatment: bookings.treatment
-            }
 
-            const alreadyBooked = await bookingsCollection.find(query).toArray();
-
-            if (alreadyBooked.length){
-                const message = `You have already booked ${bookings.name}`
-                return res.send({acknowledged: false, message})
-            }
-
-            const result = await bookingsCollection.insertOne(bookings);
+        app.post('/users', async (req, res) => {
+            const user = req.body;
+            const result = await usersCollection.insertOne(user);
             res.send(result);
+        });
+
+        app.get('/users', async (req, res) => {
+            const query = { };
+            const users = await usersCollection.find(query).toArray();
+            res.send(users);
+        });
+
+        app.get('/users/admin/:email', async (req, res) => {
+            const email = req.params.email;
+            const query = {email};
+            const user = await usersCollection.findOne(query);
+            res.send({isAdmin : user?.role === 'admin'});
         });
         
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
@@ -140,7 +141,14 @@ async function run() {
             }
             const result = await usersCollection.updateOne(filter, updatedDoc, options);
             res.send(result);
-        })
+        });
+
+        //Post Products
+        app.post('/allproducts', async (req, res) => {
+            const newProduct = req.body;
+            const result = await productCollection.insertOne(newProduct);
+            res.send(result);
+        });
 
     }
     finally {
