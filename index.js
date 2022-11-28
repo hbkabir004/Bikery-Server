@@ -97,8 +97,7 @@ async function run() {
         app.get('/products/:id', async(req, res) => {
             const id = req.params.id;
             const query = { product_id: id };
-            const cursor = await productCollection.find(query);
-            const selectedProducts = await cursor.toArray();
+            const selectedProducts = await productCollection.findOne(query);
             res.send(selectedProducts);
           
           })
@@ -114,7 +113,7 @@ async function run() {
             const alreadyBooked = await bookingsCollection.find(query).toArray();
 
             if (alreadyBooked.length){
-                const message = `You have already booked ${bookings.appointmentDate}`
+                const message = `You have already booked ${bookings.name}`
                 return res.send({acknowledged: false, message})
             }
 
