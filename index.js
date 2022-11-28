@@ -37,6 +37,7 @@ async function run() {
         const usersCollection = client.db('bikery').collection('users');
         const categoryCollection = client.db('bikery').collection('categories');
         const productCollection = client.db('bikery').collection('products');
+        const bookingsCollection = client.db('bikery').collection('bookings');
 
         app.get('/jwt', async (req, res) => {
             const email = req.query.email;
@@ -91,6 +92,35 @@ async function run() {
             res.send(selectedProducts);
           
           })
+        
+        // Read Specific Product Data
+        app.get('/products/:id', async(req, res) => {
+            const id = req.params.id;
+            const query = { product_id: id };
+            const cursor = await productCollection.find(query);
+            const selectedProducts = await cursor.toArray();
+            res.send(selectedProducts);
+          
+          })
+        // Post Bookings
+        app.post('/bookings', async (req, res) => {
+            const bookings = req.body;
+            // console.log(bookings);
+            const query = {
+                email: bookings.email,
+                treatment: bookings.treatment
+            }
+
+            const alreadyBooked = await bookingsCollection.find(query).toArray();
+
+            if (alreadyBooked.length){
+                const message = `You have already booked ${bookings.appointmentDate}`
+                return res.send({acknowledged: false, message})
+            }
+
+            const result = await bookingsCollection.insertOne(bookings);
+            res.send(result);
+        });
         
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
             const decodedEmail = req.decoded.email;
